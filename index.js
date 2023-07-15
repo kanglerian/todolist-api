@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.get('/', (req, res) => {
-    return res.send('TODO LIST API');
+    return res.send('TODO LIST API..');
 });
 
 app.get('/todos', async (req, res) => {
