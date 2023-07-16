@@ -39,12 +39,12 @@ app.post('/todos', async (req, res) => {
 });
 
 app.patch('/todo/:id', async (req, res) => {
-    const task = await Todo.update(req.body, {
+    await Todo.update(req.body, {
         where: {
             id: req.params.id
         }
     });
-    return res.status(200).json(task);
+    return res.status(200).json({ message: 'Data berhasil diubah' });
 });
 
 app.delete('/todo/:id', async (req, res) => {

@@ -1,6 +1,6 @@
 GET http://localhost:3001/todos
 ###
-GET http://localhost:3001/todo/4
+GET http://localhost:3001/todo/1
 ###
 DELETE http://localhost:3001/todo/4
 ###
@@ -13,9 +13,9 @@ Content-Type: application/json
     "dueDate": "2023-07-15"
 }
 ###
-PATCH http://localhost:3001/todo/1
+PATCH http://localhost:3001/todo/5
 Content-Type: application/json
 
 {
-    "taskName": "Code!"
+    "taskName": "Tuang"
 }

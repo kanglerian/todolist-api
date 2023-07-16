@@ -4,12 +4,13 @@
 module.exports = {
   async up (queryInterface, Sequelize) {
     await queryInterface.bulkInsert('Todos', [{
-      taskName: 'Ngoding!',
-      description: 'Kita mulai ngoding membuat sebuah aplikasi sederhana menggunakan Javascript.',
-      dueDate: new Date(),
-      createdAt: new Date(),
-      updatedAt: new Date()
-    }], {});
+       idUser: 1,
+       taskName: 'Mandi',
+       description: 'Mandi wang ka singaparna!',
+       dueDate: '2013-07-16',
+       createdAt: new Date(),
+       updatedAt: new Date()
+     }], {});
   },
 
   async down (queryInterface, Sequelize) {
