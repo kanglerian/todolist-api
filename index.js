@@ -8,6 +8,7 @@ const port = 3001;
 let authRouter = require('./routes/auth');
 let todosRouter = require('./routes/todos');
 let usersRouter = require('./routes/users');
+let refreshTokenRouter = require('./routes/refresh');
 
 app.use(cors());
 app.use(logger('dev'));
@@ -20,6 +21,7 @@ app.get('/', (req, res) => {
 });
 
 app.use('/auth', authRouter);
+app.use('/token', refreshTokenRouter);
 app.use('/todos', todosRouter);
 app.use('/users', usersRouter);
 

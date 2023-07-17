@@ -1,9 +1,10 @@
 const express = require('express');
 const router = express.Router();
 
+const { verifyToken } = require('../middlewares');
 const { Todo, User } = require('../models');
 
-router.get('/', async (req, res) => {
+router.get('/', verifyToken, async (req, res) => {
     try {
         const todos = await Todo.findAll({
             include: [
