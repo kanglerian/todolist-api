@@ -2,13 +2,13 @@ GET http://localhost:3001/todos
 ###
 GET http://localhost:3001/todo/1
 ###
-DELETE http://localhost:3001/todo/4
+DELETE http://localhost:3001/todo/2
 ###
 POST http://localhost:3001/todos
 Content-Type: application/json
 
 {
-    "taskName": "Makan",
+    "taskName": "Ngoding!",
     "description": "Besok pagi kita akan makan di Singaparna",
     "dueDate": "2023-07-15"
 }

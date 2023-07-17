@@ -1,0 +1,21 @@
+GET http://localhost:3001/users
+###
+GET http://localhost:3001/users/3
+###
+DELETE http://localhost:3001/users/2
+###
+POST http://localhost:3001/users
+Content-Type: application/json
+
+{
+    "name": "Naimatus Sya'diah",
+    "email": "naima@gmail.com",
+    "password": "naima123"
+}
+###
+PATCH http://localhost:3001/users/3
+Content-Type: application/json
+
+{
+    "email": "naimatus@gmail.com"
+}
